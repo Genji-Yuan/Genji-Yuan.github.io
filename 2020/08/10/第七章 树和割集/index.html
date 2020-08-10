@@ -20,28 +20,33 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Genji-Kokoro">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="​                     树定义：一个连通的无圈图。 平凡树：只有一个顶点。    叶子：度为1. 推论：（1）非平凡树至少有2个叶子。    （2）树是双图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="树和割集">
+<meta property="og:url" content="http://yoursite.com/2020/08/10/%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E6%A0%91%E5%92%8C%E5%89%B2%E9%9B%86/index.html">
 <meta property="og:site_name" content="Genji-Kokoro">
+<meta property="og:description" content="​                     树定义：一个连通的无圈图。 平凡树：只有一个顶点。    叶子：度为1. 推论：（1）非平凡树至少有2个叶子。    （2）树是双图">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-10T07:31:38.176Z">
+<meta property="article:modified_time" content="2020-08-10T14:57:09.952Z">
 <meta property="article:author" content="Genji">
+<meta property="article:tag" content="图论">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/08/10/%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E6%A0%91%E5%92%8C%E5%89%B2%E9%9B%86/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Genji-Kokoro</title>
+  <title>树和割集 | Genji-Kokoro</title>
   
 
 
@@ -144,76 +149,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/10/%E4%B8%80%E9%A2%97%E8%8C%81%E5%A3%AE%E6%88%90%E9%95%BF%E7%9A%84%E5%B0%8F%E9%9F%AD%E8%8F%9C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Genji">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Genji-Kokoro">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/10/%E4%B8%80%E9%A2%97%E8%8C%81%E5%A3%AE%E6%88%90%E9%95%BF%E7%9A%84%E5%B0%8F%E9%9F%AD%E8%8F%9C/" class="post-title-link" itemprop="url">一颗茁壮成长的小韭菜</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-08-10 23:09:21 / 修改时间：23:11:51" itemprop="dateCreated datePublished" datetime="2020-08-10T23:09:21+08:00">2020-08-10</time>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>没有收入的日子是比较痛苦的。这个假期不发钱了，看到银行账户上的越不再变动，心里就琢磨着搞点小钱钱。然后，我就义无反顾的投入到股票和基金的大潮中。</p>
-<p>正式玩了一个星期吧！在这一个星期中，啥也没干，就认真学习股票知识了！然后，完成了新手小白向一颗韭菜的蜕变！</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/10/%E4%B8%80%E9%A2%97%E8%8C%81%E5%A3%AE%E6%88%90%E9%95%BF%E7%9A%84%E5%B0%8F%E9%9F%AD%E8%8F%9C/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -229,10 +168,9 @@
       <meta itemprop="name" content="Genji-Kokoro">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/10/%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E6%A0%91%E5%92%8C%E5%89%B2%E9%9B%86/" class="post-title-link" itemprop="url">树和割集</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          树和割集
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -256,279 +194,96 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>​                    </p>
+        <p>​                    </p>
 <h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>定义：一个连通的无圈图。</p>
 <p>平凡树：只有一个顶点。    叶子：度为1.</p>
 <p>推论：（1）非平凡树至少有2个叶子。    （2）树是双图</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/10/%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E6%A0%91%E5%92%8C%E5%89%B2%E9%9B%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<a id="more"></a>
+<p>定理：设$G=(V,E)$是$(p,q)$图，则下列命题等价：</p>
+<p>​    （1）$G$是树；</p>
+<p>​    （2）$G$中任意两顶点之间有惟一路；</p>
+<p>​    （3）$G$连通，且$p=q+1$；</p>
+<p>​    （4）$G$中无圈，且$p=q+1$；</p>
+<p>​    （5）$G$中无圈且$G$中任两个不邻接的顶点间加一条边，得到一个惟一圈的图。</p>
+<h3 id="极小连通图"><a href="#极小连通图" class="headerlink" title="极小连通图"></a>极小连通图</h3><p>定义：去掉一条边就不连通。（极小）</p>
+<p>定理：$G$是树&lt;===&gt; $G$是极小连通图。</p>
+<h3 id="树的中心"><a href="#树的中心" class="headerlink" title="树的中心"></a>树的中心</h3><p>偏心率：$G=(V,E)$是连通图，$\forall v \in V$，$e(v) = max_{u \in V}\{ d(u,v) \}$</p>
+<p>半径：$r(G) = min_{v \in V}\{ e(v) \}$</p>
+<p>笔记：（1）$G$的中心$H \in V$，$H=\{ v|v \in V, e(v)=r(G) \}$，$H$为$G$的中心。</p>
+<p>（2）叶子最偏心。</p>
+<p>（3）$H$中顶点有1个或两个，根据最长路分析。</p>
+<h2 id="生成树"><a href="#生成树" class="headerlink" title="生成树"></a>生成树</h2><p>定义：$G=(V,E)$，$G$的一个生成子图如果是树，则称其为$G$的最小生成树。</p>
+<p>定理1：$G=(V,E)$有生成树&lt;===&gt;$G=(V,E)$连通。</p>
+<p>定理2：具有$p$个顶点的完全图$K_p$有$p^{p-2}$个生成树，$p \geqslant 2$。</p>
+<h3 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h3><p>$G = (V,E,w)$，$T$是$G$的生成树，权和最小即为最下生成树。</p>
+<p>算法：Prim算法（顶点，$O(p^2)$），Kruskal算法（边，$P(qlogq)$）。</p>
+<h2 id="割点、桥和割集"><a href="#割点、桥和割集" class="headerlink" title="割点、桥和割集"></a>割点、桥和割集</h2><p><strong>割点：</strong>设$v$是图的$G=(V,E)$一个顶点。如果$G-v$的支数大于$G$的支数，则称顶点$v$为图$G$的一个割点。</p>
+<p>笔记：（1）每个非平凡图至少有2个顶点不是割点。</p>
+<p>​             （2）有割点的图不是哈密顿图。</p>
+<p>定理：设$v$是图的$G=(V,E)$一个顶点，则下列命题等价：</p>
+<p>​    （1）$v$是$G$的割点；</p>
+<p>​    （2）$\exists u,w \in V$，$u,w$间所有路均通过$v$；</p>
+<p>​    （3）存在$V \setminus {v}$的一个二划分$\{ U,W\}$，使得$\forall v \in V.\ \forall w \in W$，$u,w$间的路均通过$v$。</p>
+<p><strong>桥：</strong>设$x$是图的$G=(V,E)$一条边。如果$G-x$的支数大于$G$的支数，则称边$x$为图$G$的一个桥。</p>
+<p>定理：设$x$是图的$G=(V,E)$一条边，则下列命题等价：</p>
+<p>​    （1）$x$是$G$的割点；</p>
+<p>​    （2）$x$不在$G$的任一圈上；</p>
+<p>​    （3）$\exists u,w \in V$，$u,w$间所有路均通过$x$；</p>
+<p>​    （4）存在$V \setminus {v}$的一个二划分$\{ U,W\}$，使得$\forall v \in V.\ \forall w \in W$，$u,w$间的路均通过$x$。</p>
+<p>割集：设$G=(V,E)$，$S \subseteq E$。如果从$G$中去掉$S$中的所有边得到的图$G-S$的支数大于$G$的支数，而去掉$S$的任一真子集中的边得到的图的支数不大于$G$的支数，则称$S$为$G$的一个割集。</p>
+<p>定理：若$S$是连通图$G=(V,E)$的割集，则$G-S$恰有两个支。</p>
+<p>推论：（1）$G$是一个有$k$个支的图。则$G-S$恰有$k+1$个支。</p>
+<p>​            （2）不连通图$G$的每个割集必是$G$的某个支的割集。</p>
+<p>​            （3）$T$是$G$的生成树，则$G$的每个割集至少包含$T$的一条边。</p>
+<p>定理：连通图$G$的每个圈与$G$的任一割集有偶数条公共边。</p>
+
     </div>
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/29/%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Genji">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Genji-Kokoro">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/29/%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="post-title-link" itemprop="url">图的基本概念</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-07-29 20:31:43" itemprop="dateCreated datePublished" datetime="2020-07-29T20:31:43+08:00">2020-07-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-01 23:48:07" itemprop="dateModified" datetime="2020-08-01T23:48:07+08:00">2020-08-01</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>$(V,R)$ 有穷系统，$V$ ：顶点集合，$R$ ：二元关系</p>
-<h2 id="基本定义"><a href="#基本定义" class="headerlink" title="基本定义"></a>基本定义</h2><h3 id="无向图"><a href="#无向图" class="headerlink" title="无向图"></a>无向图</h3><p>定义：设$V$为有穷集，$\phi = \{(uv)|u,v \in V \}$ ，$E \subseteq \phi(V)$ ，称二元组$(V,E)$ 为无向图，记做$G=(V,E)$ 。</p>
-<p>$\forall \{uv\} \in E$ ，称$u$ 与$v$ 邻接，$uv$和$u,v$关联。</p>
-<h3 id="有向图"><a href="#有向图" class="headerlink" title="有向图"></a>有向图</h3><p>定义：设$V$为有穷集，$A \subseteq V \times V \{ (v,v)|v \in V \}$，则称$(V,A)$为有向图，记做$D=(V,A)$。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/07/29/%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Genji
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2020/08/10/%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E6%A0%91%E5%92%8C%E5%89%B2%E9%9B%86/" title="树和割集">http://yoursite.com/2020/08/10/第七章 树和割集/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E5%9B%BE%E8%AE%BA/" rel="tag"># 图论</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/26/%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E8%BF%9E%E9%80%9A%E5%BA%A6%EF%BC%86%E5%8C%B9%E9%85%8D/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Genji">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Genji-Kokoro">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/26/%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E8%BF%9E%E9%80%9A%E5%BA%A6%EF%BC%86%E5%8C%B9%E9%85%8D/" class="post-title-link" itemprop="url">连通度＆匹配</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-07-26 22:19:01" itemprop="dateCreated datePublished" datetime="2020-07-26T22:19:01+08:00">2020-07-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-10 22:58:14" itemprop="dateModified" datetime="2020-08-10T22:58:14+08:00">2020-08-10</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="连通度"><a href="#连通度" class="headerlink" title="连通度"></a>连通度</h2><p>定义：设G=(V, E)，将G变成不连通图或平凡图所需要去掉的最少顶点（边）数成为G的连通度，记做</p>
-<script type="math/tex; mode=display">
-顶点连通度K(G),边连通度 \lambda (G)</script><ol>
-<li>不连通，平凡图G</li>
-</ol>
-<script type="math/tex; mode=display">
-K(G) = \lambda (G) = 0</script><ol>
-<li>树状图</li>
-</ol>
-<script type="math/tex; mode=display">
-K(T) = \lambda (T) = 1</script><ol>
-<li>有割点的G</li>
-</ol>
-<script type="math/tex; mode=display">
-K(G) = 1</script><ol>
-<li>有桥图G</li>
-</ol>
-<script type="math/tex; mode=display">
-\lambda (G) = 1</script><ol>
-<li>完全图</li>
-</ol>
-<script type="math/tex; mode=display">
-K(K_p) = \lambda (K_p) = p - 1</script><ol>
-<li>图连通</li>
-</ol>
-<script type="math/tex; mode=display">
-<===> \quad K(G) >= 1</script>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/07/26/%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E8%BF%9E%E9%80%9A%E5%BA%A6%EF%BC%86%E5%8C%B9%E9%85%8D/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/25/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Genji">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Genji-Kokoro">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/25/hello-world/" class="post-title-link" itemprop="url">你好！</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-07-25 17:04:22" itemprop="dateCreated datePublished" datetime="2020-07-25T17:04:22+08:00">2020-07-25</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-01 23:43:36" itemprop="dateModified" datetime="2020-08-01T23:43:36+08:00">2020-08-01</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>​                                                                相看两不厌，只有敬亭山。</p>
-<p>​
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/07/25/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/29/%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" rel="prev" title="图的基本概念">
+      <i class="fa fa-chevron-left"></i> 图的基本概念
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/08/10/%E4%B8%80%E9%A2%97%E8%8C%81%E5%A3%AE%E6%88%90%E9%95%BF%E7%9A%84%E5%B0%8F%E9%9F%AD%E8%8F%9C/" rel="next" title="一颗茁壮成长的小韭菜">
+      一颗茁壮成长的小韭菜 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -581,6 +336,7 @@ K(K_p) = \lambda (K_p) = p - 1</script><ol>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#树"><span class="nav-number">1.</span> <span class="nav-text">树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#极小连通图"><span class="nav-number">1.1.</span> <span class="nav-text">极小连通图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#树的中心"><span class="nav-number">1.2.</span> <span class="nav-text">树的中心</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成树"><span class="nav-number">2.</span> <span class="nav-text">生成树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最小生成树"><span class="nav-number">2.1.</span> <span class="nav-text">最小生成树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#割点、桥和割集"><span class="nav-number">3.</span> <span class="nav-text">割点、桥和割集</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
